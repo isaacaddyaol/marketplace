@@ -1,0 +1,30 @@
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Build outputs (general, though specific projects should have their own)
+build/
+dist/
+
+# Log files
+*.log
+logs/
+
+# Environment files - typically covered by project-specific .gitignores but can be here too
+.env
+.env.*
+!.env.example
+
+# Dependency directories - typically covered by project-specific .gitignores
+# node_modules/ # Already in backend/.gitignore and frontend/client/.gitignore
+# bower_components/
+
+# Coverage output
+coverage/
+.nyc_output/

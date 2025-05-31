@@ -1,0 +1,84 @@
+/* frontend/client/src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --primary-color: #E07A5F; /* Warm terracotta */
+  --secondary-color: #81B29A; /* Sage green */
+  --accent-color: #F2CC8F; /* Gold */
+  --neutral-color: #F4F3EE; /* Cream */
+  --text-color: #3D405B; /* Charcoal */
+  --light-text-color: #FFFFFF;
+
+  --header-font: 'Playfair Display', serif;
+  --body-font: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--neutral-color); /* Cream background */
+  color: var(--text-color); /* Charcoal text */
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  color: var(--primary-color); /* Terracotta for headers */
+}
+
+a {
+  color: var(--secondary-color); /* Sage green for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--body-font);
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--light-text-color); /* White text on buttons */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d8684a; /* Darker terracotta */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-family: var(--body-font);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Account for padding and border */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.5em; }
+}
